@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Reproductor</title>
+</head>
+<body style="background:#E6E6E6">
+	<header align="center"><h1><font color="#FA58AC" face="Century">♪Reproductor♪</font></h1></header>
+	<aside align="center">
+		<audio id="cancion" controls >
+		<source src="audio/hotride.mp3" type="audio/mpeg"/>
+		</audio>
+		<br>
+		<label>Vol</label>
+		<input type="range" id="points" min="0" max="100" value="0" onchange="volumen();">
+		<br>
+		<button onclick="reproducir();">Play</button>
+		<button onclick="pausa();">Pause</button>
+		<button onclick="pausa_play();">Play/Pause</button>
+		<button onclick="retroceder();">Prev</button>
+		<button onclick="adelantar();">Next</button>
+	<aside>
+	<script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>
